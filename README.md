@@ -216,7 +216,7 @@ rootLogger.appenderRef.stdout.ref = stdout
 ## 5. Future work
  - Push log to kafka
  - Drill down some fields
- - Fig bugs (when needed)
+ - Fix bugs (when needed)
 
 ## 6. Author
 Nguyễn Thuần Hưng - hungnt61h  
