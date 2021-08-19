@@ -67,7 +67,8 @@ The plugin configuration file has following properties:
 | ```split.enable``` | Enable to capture split completion event. This value should be ```true``` in workers. | ```false``` | false |
 | ```split.log-format``` | Format of log line as [MessageFormat](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/text/MessageFormat.html) pattern, except that plugin only support position of parameters not their interpretation | <code>{0}&#124;{1}&#124;{2}&#124;{3}</code> | true |
 | ```split.log-fields``` | Fields to get from event, order of them is corresponding log-format. Each of fields is separated by semi-colon `;` | ```spl.queryId;spl.payload;spl.startTime;spl.failureMessage``` | true |
-Note: ```log-format``` will be prepended with prefix depending on kind of event
+
+**Note**: ```log-format``` will be prepended with prefix depending on kind of event
  - Query creation event: ```[CREATION] - ```
  - Query completion event: ```[COMPLETION] - ```
  - Split completion event: ```[SPLIT] - ```
